@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="header-container">
+                <input id="color-picker" type="color">
+                <select id="scheme-picker">
+                    <option>monochrome</option>
+                    <option>monochrome-dark</option>
+                    <option>monochrome-light</option>
+                    <option>analogic</option>
+                    <option>complement</option>
+                    <option>analogic-complement</option>
+                    <option>triad</option>
+                    <option>quad</option>
+                </select>
+                <button id="get-color">Get color scheme</button>
+            </div>
+            <div id="color-scheme" class="initial-text">
+                <h3>Pick a color, choose scheme and generate your palette !</h3> 
+                <h4>Click on color to copy</h4>
+            </div>
+            <div id="color-hex" class="color-hex"></div>
+            <div id="popup"></div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
